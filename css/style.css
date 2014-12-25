@@ -1,0 +1,58 @@
+#box1, #box3, #box5, #box6 {width: 100px;}
+#box2, #box4 {height: 40px;}
+#btnNewTab a {background: transparent !important;border: none;}
+#content-pane {width: 100%;height: calc(100%);position: absolute;right: 0;overflow: hidden;}
+#content-region {height: calc(100% - 40px);top: 50px;width: 100%;}
+#entity-region {height: calc(100% - 30px);/*right: 0;*/display: block; width: 100%; background: #d2d9e0 -webkit-gradient(linear, left top, right bottom, from(#d2d9e0), to(#e9ecef)) no-repeat; overflow: auto; -webkit-user-select: none; min-width: 230px;}
+#entity-region, #content-region {transition: width 0.5s;width: 100%;/*position: absolute;*/overflow-y: auto; overflow-x: hidden;}
+#filter-entity-box { position: absolute; right: 0; bottom: 15px; }
+#left-component {/*width: 60em;*/}
+#my-divider {/*left: 60em;  Same as left component width */width: 3px;border-right: 1px solid #999;background: transparent;}
+#myTabDrop1 { background: transparent !important; border: none; }
+#right-component { /*left: 60em;   Same as left component width */ margin-left: 0px;  /* Same as divider width */ }
+.abottom {bottom: 0;}
+.absolute { position: absolute !important;}
+.active { color: #259b24; }
+.aleft {left: 0;}
+.aright {right: 5px;}
+.atop {top: 40px;}
+.container { width: 100%; padding: 5px 0 0 0; margin: 0;}
+.contextmenu {margin: 0;}
+.core-selected { background: #EEE; }
+.dropdown { background: #FFF; position: absolute; max-width: 200px;}
+.left { float: left !important; }
+.opacity30 { opacity: 0.3; }
+.opacity50 { opacity: 0.5; }
+.opacity70 { opacity: 0.7; }
+.pane { height: calc(100%); position: relative;}
+.quick-info {transition: width 0.5s, opacity 0.25s;background: #FFF;position: absolute;border-right: 3px solid #FFF;height: calc(100% - 30px);/*height: 100%;*/width: 0;opacity: 0;left: 0;top: 0px;overflow-y: auto;-webkit-box-shadow: 0 0 20px 1px rgba(136,136,136,0.5); overflow: hidden; }
+.right { float: right !important;}
+.split-pane {position: relative;height: calc(100% - 50px);width: 100%;overflow: hidden;}
+.split-pane-bar {width: 1px;height: 30px;/*background-color: #BBB;*/margin-top: 300px;}
+.split-pane-bottom { width: 3px; height: 30px; background-color: #EEE; background-image: linear-gradient(to bottom, #EFEFEF 100%, #DEDEDE 0%); position: absolute; bottom: 0; }
+.split-pane-component {-webkit-box-shadow: inset 0 0 10px #AAA;overflow: hidden;position: absolute;top: 0;left: 0;}
+.split-pane-divider {background: #EFEFEF ;/*-webkit-box-shadow: 0 0 10px 1px rgba(136,136,136,0.5);*/}
+.split-pane-resize-shim {position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 1000;display: none;}
+.split-pane-top { width: 1px; height: 50px; background-image: linear-gradient(to bottom, #DEDEDE 0%, #EFEFEF 100%); position: absolute; top: 0; }
+.split-pane.fixed-left > .split-pane-component,.split-pane.fixed-right > .split-pane-component,.split-pane.vertical-percent > .split-pane-component {position: absolute;top: 0;height: 100%;overflow: auto;left: auto;right: 0;z-index: 1;}
+.split-pane.fixed-left > .split-pane-component:first-child,.split-pane.fixed-right > .split-pane-component:first-child,.split-pane.vertical-percent > .split-pane-component:first-child {left: 0;right: auto;}
+.split-pane.fixed-left > .split-pane-divider,.split-pane.fixed-right > .split-pane-divider,.split-pane.vertical-percent > .split-pane-divider {position: absolute;height: 100%;top: 0;cursor: ew-resize;cursor: w-resize\9;z-index: 2;}
+.split-pane.fixed-left > .split-pane-resize-shim,.split-pane.fixed-right > .split-pane-resize-shim,.split-pane.vertical-percent > .split-pane-resize-shim {cursor: ew-resize;cursor: w-resize\9;}
+.split-pane.fixed-top > .split-pane-component,.split-pane.fixed-bottom > .split-pane-component,.split-pane.horizontal-percent > .split-pane-component {position: absolute;left: 0;width: 100%;overflow: auto;top: auto;bottom: 0;z-index: 1;}
+.split-pane.fixed-top > .split-pane-component:first-child,.split-pane.fixed-bottom > .split-pane-component:first-child,.split-pane.horizontal-percent > .split-pane-component:first-child {top: 0;bottom: auto;}
+.split-pane.fixed-top > .split-pane-divider,.split-pane.fixed-bottom > .split-pane-divider,.split-pane.horizontal-percent > .split-pane-divider {position: absolute;width: 100%;left: 0;cursor: ns-resize;cursor: n-resize\9;z-index: 2;}
+.split-pane.fixed-top > .split-pane-resize-shim,.split-pane.fixed-bottom > .split-pane-resize-shim,.split-pane.horizontal-percent > .split-pane-resize-shim {cursor: ns-resize;cursor: n-resize\9;}
+.tabsbg #tabContainer { left: 10px !important; }
+.tabsbg .core-selected { background: #dbdde0 !important; color: #333; z-index: 200; border-bottom: none; /*margin-top: 5px;*/ margin-bottom: -1px; }
+.tabsbg paper-tab { text-align: left !important; max-width: 150px; border: 1px solid #999; background: #D1D1D1; background: -webkit-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%); display: inline-block; position: relative; z-index: 0; border-top-left-radius: 6px; border-top-right-radius: 6px; /*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;*/ /*text-shadow: 0 1px #FFF;*/ margin: 0 -5px; /*padding: 0 20px;*/ }
+.tabsbg paper-tab:before { position: absolute; content: " "; width: 100%; bottom: 0; left: 0; /*border-bottom: 1px solid #AAA;*/ z-index: 1; }
+.tabsbg paper-tabs { border-bottom: 0; overflow: visible; padding: 5px; }
+.tabsbg { /*background-image: linear-gradient(to bottom, #DEDEDE 0%, #EFEFEF 100%);*/ -webkit-user-select: none; text-align: left; list-style: none; margin: 2px 4px -4px 4px; padding: 0; /*line-height: 24px;*/ /*height: 26px;*/ /*overflow: hidden;*/ font-size: 12px; font-family: verdana; position: relative; /*background: #CCC;*/ padding: 0 10px; border-bottom: 1px solid #999; }
+::-webkit-scrollbar { width: 9px; }
+::-webkit-scrollbar-thumb { background-color: #AAA; border-radius: 10px; /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */ }
+::-webkit-scrollbar-thumb:hover { background-color: #888; border-radius: 10px; /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */ }
+::-webkit-scrollbar-track { background-color:initial; /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */ border-radius: 10px; }
+core-item {min-height: 30px !important;}
+html, body { height: calc(100%); overflow: hidden; background-image: linear-gradient(to bottom right, #dbdde0 , #babec4 );margin: 0; padding: 0; } 
+menu-bar, menu-bar-bottom, menu-bar-bottom-entity { color: #636363; }
+menu-bar { height: 40px;}

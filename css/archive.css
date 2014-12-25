@@ -1,0 +1,64 @@
+/* Content I'm not sure is needed anymore */
+
+#tabs {
+	width: 100%;
+	margin: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	text-transform: uppercase;
+}
+
+.purple {
+	background: #311b92;
+	color: white;
+}
+
+core-toolbar {
+	background: #03a9f4;
+	color: white;
+}
+
+core-header-panel {
+	height: 100%;
+	overflow: auto;
+}
+
+
+.button:hover {
+	box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+	display: inline-block;
+	margin: 2px;
+	vertical-align: middle;
+	font-size: 0.9rem;
+	cursor: pointer;
+}
+.button-glyph {
+	float: right;
+	font-size: 1.5rem;
+	min-width: 40px;
+}
+.button-glyph span {
+	margin: 4px 7px;
+}
+
+.top-seperator {
+	margin: 0; 
+	width: 3%; 
+	height: 30px; 
+	float: left;
+}
+
+.right { 
+	float: right !important;
+}
+.center { 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.filter-buttons-box { margin-right: 10px;}
